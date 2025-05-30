@@ -4,7 +4,7 @@
     "type": "wordpress-plugin",
     "require": {
         "composer/installers": "^1.9",
-        "tightenco/collect": "^7.12",
+        "tightenco/collect": "^9.52",
         "eftec/bladeone": "^3.46"
     },
     "license": "MIT",
@@ -17,5 +17,10 @@
             "WP_BladeOne\\": "php/src"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    }
 }
